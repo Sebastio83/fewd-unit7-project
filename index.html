@@ -18,7 +18,7 @@
     
     <div class="ContentWrapper">
       <div class="videoWrapper">
-        <video class="mejs__player">
+        <video width="852" height="480">
           <source src="video/video.mp4" type="video/mp4">
           <source src="video/video.ogg" type="video/ogg">
         </video>
@@ -49,6 +49,12 @@
         </p>
       </div><!-- /.transcriptWrapper -->
     </div><!-- /.ContentWrapper -->
+    <script>
+      $('video').mediaelementplayer({
+        features: ['playpause', 'tracks', 'progress'],
+        startLanguage: 'en'
+      });
+    </script>
   </body>
 </html>
 
