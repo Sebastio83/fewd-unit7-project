@@ -9,20 +9,28 @@ body {
   color: #384047;
 }
 
-.wrapper {
-  max-width: 100%;
-  margin: 0px auto;
+.contentWrapper {
+  max-width: 90%;
+  margin: 10px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
 }
-
-video {
+.videoWrapper {
   margin: 0 auto;
-  display: block;
-  width: 100%
+  width: 100%;
 }
 
-.transcript {
+.transcriptWrapper {
+  margin: 0 auto;
+  padding-top: 1.3em;
+  display: block;
+  width: 90%;
+  text-align: inherit;
+  font-size: 1.2em;
+  line-height: 1.8em;
+}
 
-  }
 
 /***********************************
   Media Querys
@@ -30,15 +38,14 @@ video {
 
 @media (min-width: 786px) {
   
-  .wrapper{
-    max-width: 800px;
+  .videoWrapper {
+    max-width: 900px;
+    width: 80%;
   }
   
-  video {
-    margin: 0 auto;
-    display: block;
+  .transcriptWrapper {
+    width: 75%;
+    max-width: 900px;
   }
-  .transcript {
-    
-  }
+  
 }
