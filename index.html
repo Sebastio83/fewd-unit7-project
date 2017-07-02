@@ -7,17 +7,24 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+    </script>
+    <script src="http://cdn.jsdelivr.net/npm/mediaelement@4.2.2/build/mediaelement-and-player.min.js">
+    </script>
+    <link href="http://cdn.jsdelivr.net/npm/mediaelement@4.2.2/build/mediaelementplayer.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
     
-    <div class="wrapper">
-      <video controls>
-        <source src="video/video.mp4" type="video/mp4">
-        <source src="video/video.ogg" type="video/ogg">
-      </video>
+    <div class="ContentWrapper">
+      <div class="videoWrapper">
+        <video class="mejs__player">
+          <source src="video/video.mp4" type="video/mp4">
+          <source src="video/video.ogg" type="video/ogg">
+        </video>
+      </div><!-- /.videoWrapper -->
       
-      <div class="transcript">
+      <div class="transcriptWrapper">
         <p>
           <span id="s1">Now that we've looked at the architecture of the internet, let's see how you might</span>
           <span id="s2">connect your personal devices to the internet inside your house.</span>
@@ -40,8 +47,8 @@
           <span id="s15">A modem is what connects the internet to your network at home.</span>
           <span id="s16">A few common residential modems are DSL or</span>
         </p>
-      </div><!-- /.transcript -->
-    </div><!-- /.wrapper -->
+      </div><!-- /.transcriptWrapper -->
+    </div><!-- /.ContentWrapper -->
   </body>
 </html>
 
