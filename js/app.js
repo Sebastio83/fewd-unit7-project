@@ -9,14 +9,14 @@ let time;
 function resetColor() {
   for(i = 1; i <= span.length; i++) {
     reset = document.getElementById('s' + i);
-    reset.style.color = 'black';
+    reset.style.color = '#000060';
   }
 }
 
 function setColor(i) {
   resetColor();
   set = document.getElementById('s'+ i);
-  set.style.color = 'tomato';
+  set.style.color = '#22A7F0';
 }
 
 vid.addEventListener('timeupdate', () => {
